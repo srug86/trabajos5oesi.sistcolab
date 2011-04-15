@@ -1,0 +1,91 @@
+% Clase
+\documentclass[11pt,a4paper,spanish,twoside]{report}
+
+% Órdenes auxiliares
+\input{inc/includes.tex}
+
+% Encabezado y pie de página
+\encabezado
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\begin{document}
+
+% Silabación extra
+\input{inc/hyphenations.tex}
+
+% Portada
+\portada{Sistemas para la colaboración}
+{Trabajo teórico:}{Sistemas colaborativos para la gestión de proyectos}
+{Sergio de la Rubia García-Carpintero\\Alicia Martín-Benito Escalona}
+{28 de Abril de 2011}
+
+% Licencia
+\licencia{Sergio de la Rubia García-Carpintero, Alicia Martín-Benito Escalona}
+
+% Índices
+\tableofcontents
+% \listoffigures
+% \listoftables
+
+%% INICIO DEL DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Introducción}
+% Explicar en qué consiste la gestión de proyectos e introducir las
+% características que pueden incluir los sistemas software colaborativos.
+
+\chapter{Sistema de seguimiento de incidentes}
+\section{En qué consiste}
+\section{Ejemplo. \emph{Trac}}
+
+\chapter{Planificación}
+\section{En qué consiste}
+\section{Ejemplo. \emph{Jira}}
+
+\chapter{Gestión de la cartera de proyectos}
+\section{En qué consiste}
+\section{Ejemplo. \emph{Launchpad}}
+
+\chapter{Gestión de recursos}
+\section{En qué consiste}
+\section{Ejemplo. \emph{MindGenius}}
+
+\chapter{Gestión de documentos}
+\section{En qué consiste}
+\section{Ejemplo. \emph{5pm}}
+
+\chapter{Caso de estudio. \emph{Redmine}}
+
+\begin{thebibliography}{99}
+\bibitem{WPM} Comparación del software disponible para la gestión de proyectos:
+\\ \url{http://en.wikipedia.org/wiki/List_of_project_management_software}
+\bibitem{WTR} Descripción de Trac:
+  \url{http://es.wikipedia.org/wiki/Trac}
+\bibitem{TRA} Página web de Trac:
+  \url{http://trac.edgewall.org/}
+\bibitem{WJI} Descripción de Jira:
+  \url{http://es.wikipedia.org/wiki/JIRA}
+\bibitem{JIR} Página web de Jira:
+  \url{http://www.atlassian.com/software/jira}
+\bibitem{WLA} Descripción de Launchpad:\\
+  \url{http://es.wikipedia.org/wiki/Launchpad}
+\bibitem{LAU} Página web de Launchpad:\\
+  \url{http://launchpad.net/launchpad-project}
+\bibitem{WMG} Descripción de MindGenius:\\
+  \url{http://en.wikipedia.org/wiki/MindGenius}
+\bibitem{MGE} Página web de MindGenius:
+  \url{http://www.mindgenius.com}
+\bibitem{W5P} Descripción de 5pm:
+  \url{http://en.wikipedia.org/wiki/5pm}
+\bibitem{5PM} Página web de 5pm:
+  \url{http://www.5pmweb.com}
+\bibitem{WRM} Descripción de Redmine:
+  \url{http://es.wikipedia.org/wiki/Redmine}
+\bibitem{RMI} Página web de Redmine:
+  \url{http://www.redmine.org}
+\end{thebibliography}
+%\bibliographystyle{plain} 
+%\bibliography{t2}
+
+\end{document}

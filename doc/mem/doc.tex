@@ -125,13 +125,13 @@ desarrollada por la empresa australiana \emph{Atlassian}. \cite{WJI}
 		\item \textbf{Desarrolado por:} \emph{Atlassian}
 		\item \textbf{Sistema operativo:} Multiplataforma.
 		\item \textbf{Lenguaje de implementación:} \emph{Java}.
-    \item \textbf{Software colaborativo:} Si.
-    \item \textbf{Sistema de seguimiento de incidentes:} Si.
-		\item \textbf{Planificación:} Si.
+    \item \textbf{Software colaborativo:} \textbf{Si}.
+    \item \textbf{Sistema de seguimiento de incidentes:} \textbf{Si}.
+		\item \textbf{Planificación:} \textbf{Si}.
 		\item \textbf{Gestión de la cartera de proyectos:} No.
 		\item \textbf{Gestión de recursos:} No.
 		\item \textbf{Gestión de documentos:} No.
-		\item \textbf{Basado en web:} Si.
+		\item \textbf{Basado en web:} \textbf{Si}.
 		\item \textbf{Licencia:} Propietaria. Gratuita para uso privado.
 		\item \textbf{URL:} \url{http://www.atlassian.com/software/jira}
 		\end{itemize}
@@ -232,10 +232,10 @@ desarrollada por la empresa australiana \emph{Atlassian}. \cite{WJI}
 \section{En qué consiste}
 Es un término utilizado por los jefes de proyecto y por las organizaciones
 gestoras de proyectos, para describir los métodos para el análisis y la
-gestión colectiva de un grupo de proyectos propuestos o en curso.
-El objetivo fundamental es determinar cuál es la combinación de los proyectos
-y la secuencia de realización que estos deben seguir para lograr los mejores
-resultados según los objetivos de la organización.
+gestión colectiva de un grupo de proyectos o subproyectos propuestos o en
+curso. El objetivo fundamental es determinar cuál es la combinación de los
+proyectos y la secuencia de realización que estos deben seguir para lograr los
+mejores resultados según los objetivos de la organización.
 
 \section{Ejemplo. \emph{Launchpad}}
 \imagen{launchpad-logo.png}{6}{}{}
@@ -250,13 +250,13 @@ versión 3 de la licencia \emph{AGPL} (\emph{Affero General Public License}).
 		\item \textbf{Desarrolado por:} \emph{Canonical Ltd.}
 		\item \textbf{Sistema operativo:} Multiplataforma.
 		\item \textbf{Lenguaje de implementación:} \emph{Python}.
-    \item \textbf{Software colaborativo:} Si.
-    \item \textbf{Sistema de seguimiento de incidentes:} Si.
+    \item \textbf{Software colaborativo:} \textbf{Si}.
+    \item \textbf{Sistema de seguimiento de incidentes:} \textbf{Si}.
 		\item \textbf{Planificación:} No.
-		\item \textbf{Gestión de la cartera de proyectos:} Si.
+		\item \textbf{Gestión de la cartera de proyectos:} \textbf{Si}.
 		\item \textbf{Gestión de recursos:} No.
 		\item \textbf{Gestión de documentos:} No.
-		\item \textbf{Basado en web:} Si.
+		\item \textbf{Basado en web:} \textbf{Si}.
 		\item \textbf{Licencia:} \emph{Affero GPL}.
 		\item \textbf{URL:} \url{https://launchpad.net/launchpad-project}
 		\end{itemize}
@@ -283,6 +283,76 @@ versión 3 de la licencia \emph{AGPL} (\emph{Affero General Public License}).
 	distribuciones y proyectos independientes.
 
 	\subsection{Cómo lleva a cabo la gestión de la cartera de proyectos}
+	El aspecto de la ventana principal de la aplicación puede observarse en la
+	figura \ref{IMGLAU1}. Esta pantalla contiene la información de las
+	funcionalidades que \emph{launchpad} proporciona, las últimas noticias
+	acerca de la aplicación, un buscador de proyectos y una lista con los
+	proyectos albergados más conocidos (\emph{Do}, \emph{Me TV}, \emph{Bazaar},
+	\emph{MySQL}, \emph{Inkscape}, \emph{Ubuntu}, etc.).
+
+	\imagen{launchpad-inicio.png}{12}{Vista principal de la aplicación}{IMGLAU1}
+
+	Si seleccionamos uno de los proyectos, por ejemplo \emph{Ubuntu}, se
+	obtendrá una vista parecida a la de la figura \ref{IMGLAU2}.
+
+	\imagen{launchpad-ubuntu.png}{12}{Vista principal del proyecto Ubuntu}{IMGLAU2}
+
+	Esta es la página principal del proyecto \emph{Ubuntu} en \emph{launchpad}.
+	En ella puede verse un apartado con información del proyecto, una lista con
+	los eventos e hitos más importantes, una lista con las últimas cuestiones
+	planteadas por los desarrolladores de la aplicación, un apartado con
+	anuncios de próximos lanzamientos y actualizaciones y un panel con una serie
+	de operaciones que se pueden realizar (\emph{Report a bug}, \emph{Ask a
+	question}, \emph{Help translate} y \emph{Register a blueprint}).
+	
+	Además, en la parte superior de la pantalla, pueden observarse las
+	siguientes etiquetas: \emph{Overview} (que hace referencia a la pantalla
+	actual), \emph{Code}, \emph{Bugs}, \emph{Blueprints}, \emph{Translations} y
+	\emph{Answers}. Estas partes ya fueron explicadas brevemente en el apartado
+	de características de \emph{launchpad}, pero, de todas ellas, volveremos a
+	repasar la de \emph{Blueprints}, pues está relacionada con cómo implementa
+	la gestión de la cartera de proyectos esta aplicación.
+
+	Como decíamos, si pinchamos en la pestaña \emph{Blueprints} se mostrará una
+	pantalla como la que representa la figura \ref{IMGLAU3}.
+
+	\imagen{launchpad-blueprints.png}{12}{Vista de los \emph{blueprints}
+		(anteproyectos)}{IMGLAU3}
+
+	En esta pantalla están listados una serie de \emph{blueprints}
+	(anteproyectos) que van a ser desarrollados para el proyecto \emph{Ubuntu}.
+	Cada una de las filas de la tabla hace referencia a un anteproyecto e
+	informa del estado en el que se encuentra:
+	\begin{itemize}
+		\item \textbf{\emph{Priority}}: Prioridad de desarrollo (\emph{Low},
+		\emph{Medium} o \emph{High} (baja, media o alta - respectivamente)).
+		\item \textbf{\emph{Blueprint}}: Nombre del anteproyecto.
+		\item \textbf{\emph{Design}}: Estado del diseño del anteproyecto
+		(\emph{New}, \emph{Discussion}, \emph{Drafting}, \emph{Review} o
+		\emph{Approved} (nuevo, en discusion, en redacción, en revisión o
+		aprobado - respectivamente)).
+		\item \textbf{\emph{Delivery}}: Estado de la entrega (\emph{Deferred},
+		\emph{Started}, \emph{Not started}, \emph{Good progress}, 
+		\emph{Slow progress}, \emph{Beta Available}, \emph{Deployment},
+		\emph{Informational}, \emph{Needs Infraestructure}, \emph{Unknow}, etc.,
+		(postergada, comenzada, no comenzada, buen progreso, progreso lento,
+		versión beta disponible, en despliegue, informativa, necesita
+		infraestructura, desconocida, etc., - respectivamente)).
+		\item \textbf{\emph{Assignee}}: Usuario asignatario del anteproyecto.
+		\item \textbf{\emph{Series}}: Versión del proyecto a la que pertenece el
+		anteproyecto.
+	\end{itemize}
+
+	Para obtener más información acerca de un anteproyecto bastará con hacer
+	click sobre él. La vista obtenida será similar a la mostrada en la figura
+	\ref{IMGLAU4}.
+		
+	\imagen{launchpad-blueprint.png}{12}{Vista de un \emph{blueprint}
+		(anteproyecto)}{IMGLAU4}
+
+	En esta pantalla puede observarse un campo de información acerca del
+	anteproyecto, una lista de los usuarios subscritos a dicho anteproyecto y
+	una pizarra con anotaciones.
 
 \chapter{Gestión de recursos}
 \section{En qué consiste}

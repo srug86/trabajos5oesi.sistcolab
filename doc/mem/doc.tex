@@ -152,6 +152,81 @@ desarrollada por la empresa australiana \emph{Atlassian}. \cite{WJI}
 	caritativas y personas individuales.
 
 	\subsection{Cómo lleva a cabo la planificación}
+	En la imagen \ref{IMGJIRA1} puede observarse la vista general que ofrece de
+	un proyecto dicha la aplicación.
+
+	\imagen{jira-general.png}{12}{Vista general del proyecto}{IMGJIRA1}
+
+	En la parte superior, pueden observarse cuatro menús:
+	\begin{itemize}
+		\item \textbf{\emph{Dashboards} (cuadro de mandos)}: Que permite configurar
+		las opciones principales de la aplicación y resume las últimas incidencias
+		de los proyectos registrados.
+		\item \textbf{\emph{Projects} (proyectos)}: Que permite seleccionar el
+		proyecto a mostrar de entre todos los existentes.
+		\item \textbf{\emph{Issues} (incidencias)}: Que permite seleccionar
+		diferentes modos de mostrar las incidencias que los usuarios van
+		registrando en la aplicación.
+		\item \textbf{\emph{Agile} (ágil)}: Que permite seleccionar diferentes
+		gráficos que resumen la actividad actual.
+	\end{itemize}
+	Seleccionando alguno de los proyectos contenidos en \emph{Projects} se
+	obtiene la vista mostrada anteriormente (figura \ref{IMGJIRA1}).
+	En ella pueden observarse varios apartados: descripción del
+	proyecto, versiones del proyecto, últimas incidencias, resumen con la
+	actividad más reciente y gráfico resumen de las últimas incidencias
+	registradas (en rojo) y las	últimas incidencias resueltas (en verde).
+
+	Como dice el título de la sección, la aplicación permite planificar la
+	realización de tareas y permite asignar la realización de dichas tareas
+	a alguno o a varios de los miembros que componen el equipo de desarrollo
+	del proyecto. Para hacerlo, se debe seleccionar alguno de los iconos que
+	acompañan a la etiqueta \emph{Create} (parte superior derecha):
+	\emph{Bug} (si se desea crear una tarea para resolver un fallo encontrado
+	en el proyecto), \emph{Task} (si se desea crear una tarea específica) u
+	\emph{Others} (si se desea crear otro tipo de incidencias).
+	Si se elige, por ejemplo, \emph{Bugs} se obtendrá una vista como la mostrada
+	por la figura \ref{IMGJIRA2}.
+	
+	\imagen{jira-crear_tarea.png}{12}{Vista de creación de tareas}{IMGJIRA2}
+
+	Esta ventana permite describir este tipo de incidencia (resumen, prioridad,
+	fecha de vencimiento, versiones afectadas, descripción, tiempo estimado,
+	etc., y permite asignársela	a alguno de los usuarios registrados en este
+	proyecto (incluso a uno mismo).
+
+	Si se desea tener una visión general de todas las incidencias (resueltas y
+	en curso) registradas en la aplicación, la opción \emph{Agile/Planning Board}
+	mostrará un resumen como el que se puede verse en la figura \ref{IMGJIRA3}.
+
+	\imagen{jira-tareas.png}{12}{Vista de las tareas del proyecto}{IMGJIRA3}
+
+	Cada incidencia aparece representada con un cuadrado de color que muestra
+	un resumen de las características más importantes de dicha incidencia
+	(tipo, código, prioridad, resumen, versión y persona responsable). Si la
+	incidencia ya fue resuelta, aparecerá con el código tachado.
+
+	Si se pincha sobre alguna de estas tareas se mostrará dicha tarea con más
+	detalle, como puede verse en la figura \ref{IMGJIRA4}.
+
+	\imagen{jira-tarea_en_curso.png}{12}{Vista de una tarea en curso}{IMGJIRA4}
+
+	Como puede observarse, dicha vista permite conocer también el historial de
+	cambios de esta tarea y permite realizar otra serie de acciones como:
+	editar las características de la incidencia, asignar la tarea a uno mismo,
+	asignárselo a otro, comentarla, detener la progresión, etc.
+
+	Por último, si se desea mostrar un calendario con todas las incidencias del
+	proyecto (finalizadas, en curso y/o aún sin comenzar), simplemente hay que
+	seleccionar	en la vista del proyecto, la pestaña \emph{Calendar} (en el
+	menú de la izquierda). Se mostrará una pantalla como la de la figura
+	\ref{IMGJIRA5}
+
+	\imagen{jira-calendario.png}{12}{Vista del calendario de tareas}{IMGJIRA5}
+
+	Cada rectángulo representa una incidencia. El color de dicho rectángulo
+	representa la prioridad (las rojas son las más prioritarias y las verdes
+	las menos).
 
 \chapter{Gestión de la cartera de proyectos}
 \section{En qué consiste}
@@ -189,18 +264,18 @@ versión 3 de la licencia \emph{AGPL} (\emph{Affero General Public License}).
 	\subsection{Características}
 	Consta de varias partes:
 	\begin{itemize}
-	\item \textbf{Code:} un sitio de alojamiento de código fuente que utiliza el
-	sistema de control de versiones \emph{Bazaar}.
-	\item \textbf{Bugs:} un sistema de seguimiento de errores para informar
-	sobre \emph{bugs} en diferentes distribuciones y productos.
-	\item \textbf{Blueprints:} un sistema de seguimiento para especificaciones y
-	nuevas características.
-	\item \textbf{Translations:} un sitio para traducir aplicaciones a múltiples
-	idiomas.
-	\item \textbf{Answers:} un sitio de ayuda para la comunidad.
-	\item \textbf{Soyuz:} una herramienta para llevar una pequeña parte del
-	mantenimiento de las distribuciones. Abarca el sistema de construcción, el
-	mantenimiento de paquetes y la publicación de archivos.
+	\item \textbf{\emph{Code}:} un sitio de alojamiento de código
+	fuente que utiliza el	sistema de control de versiones \emph{Bazaar}.
+	\item \textbf{\emph{Bugs}:} un sistema de seguimiento de errores para
+	informar sobre \emph{bugs} en diferentes distribuciones y productos.
+	\item \textbf{\emph{Blueprints}:} un sistema de seguimiento para
+	especificaciones y nuevas características.
+	\item \textbf{\emph{Translations}:} un sitio para traducir aplicaciones
+	a múltiples	idiomas.
+	\item \textbf{\emph{Answers}:} un sitio de ayuda para la comunidad.
+	\item \textbf{\emph{Soyuz}:} una herramienta para llevar una pequeña parte
+	del	mantenimiento de las distribuciones. Abarca el sistema de construcción,
+	el mantenimiento de paquetes y la publicación de archivos.
 	\end{itemize}
 
 	\emph{Launchpad} es usada primordialmente para el desarrollo de

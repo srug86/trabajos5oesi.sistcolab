@@ -103,24 +103,24 @@ desarrolladora es \emph{Edgewall Software}, de origen sueco. \cite{TRA}
         \item\textbf{Desarrollado por:} \emph{Edgewall Software}
         \item\textbf{Sistema operativo:} Multiplataforma.
 	\item\textbf{Lenguaje de implementación:} \emph{Python}.
-        \item\textbf{Software colaborativo:} Si.
-        \item\textbf{Sistema de seguimiento de incidentes:} Si.
+        \item\textbf{Software colaborativo:} \textbf{Si}.
+        \item\textbf{Sistema de seguimiento de incidentes:} \textbf{Si}.
 	\item\textbf{Planificación:} No.
 	\item\textbf{Gestión de la cartera de proyectos:} No.
 	\item\textbf{Gestión de recursos:} No.
 	\item\textbf{Gestión de documentos:} No.
-	\item\textbf{Basado en web:} Si.
+	\item\textbf{Basado en web:} \textbf{Si}.
 	\item\textbf{Licencia:} \emph{BSD modificada}.
 	\item\textbf{URL:} \url{http://trac.edgewall.org/}
         \end{itemize}
 	\subsection{Características}
-        \emph{Trac} es software libre y está desarrollado en
-        \emph{Python}.
+        \emph{Trac} es software libre y está desarrollado en \emph{Python}.
         
-        Permite hiperlinks de información entre la base de
-        datos de errores, el sistema de control de versiones y el contenido
-        de la wiki. También sirve como interfaz para los sistemas de control
-        de versiones e incluye otras características como:
+        Permite hiperlinks de información entre la base de datos de errores,
+        el sistema de control de versiones y el contenido de la wiki. También
+        sirve como interfaz para los sistemas de control de versiones e
+        incluye otras características como:
+
         \begin{itemize}
             \item Gestión de proyectos: desarrollo del plan de trabajo,
             creación de hitos.
@@ -137,7 +137,7 @@ desarrolladora es \emph{Edgewall Software}, de origen sueco. \cite{TRA}
         
         Son muchas las empresas que utilizan esta herramienta, algunas de las
         cuales son: la \emph{NASA}, \emph{WordPress}, \emph{Twisted},
-        \emph{Dojo Toolkit}, \emph{Pidgin} y un largo etcétera. 
+        \emph{Dojo Toolkit}, \emph{Pidgin}. 
 
 	\subsection{Cómo lleva a cabo el seguimiento de incidentes}
 
@@ -169,6 +169,10 @@ desarrolladora es \emph{Edgewall Software}, de origen sueco. \cite{TRA}
 
             \imagen{Trac-Progreso2.png}{12}{Vista de la pestaña de progreso}{IMGTRAC3}
             
+            Pinchando sobre cada uno de los tipos de incidencia
+            (\emph{closed}, \emph{active} y \emph{Total}) que aparecen dentro
+            de los hitos se accede a las incidencias que pertenecen al hito.
+
           \item \textbf{Hojear Fuentes.} Esta pestaña permite acceder a las
             fuentes contenidas en el repositorio.
 
@@ -194,13 +198,16 @@ desarrolladora es \emph{Edgewall Software}, de origen sueco. \cite{TRA}
             \ref{IMGTRAC5} se muestran las acciones que pueden realizarse.
 
             \imagen{Trac-ModificarIncidencia.png}{12}{Vista de la
-              modificación de una incidencia}{IMGTRAC6}
+              modificación de una incidencia}{IMGTRAC5}
 
           \item \textbf{Nueva incidencia.} Accediendo a esta pestaña podemos
             crear una nueva incidencia, la cual quedará reflejada en el
-            sistema.
+            sistema. En la imagen \ref{IMGTRAC6} vemos la información
+            necesaria para crear una nueva incidencia.
 
-          \item \textbf{Buscar}.
+            \imagen{Trac-CrearIncidencia.png}{12}{Vista de la pestaña crear
+              incidencia}{IMGTRAC6}
+
         \end{description}
 
 \chapter{Planificación}
@@ -486,20 +493,20 @@ utilizado por varias universidades y escuelas superiores en el \emph{Reino
 \emph{MindGenius Business} y \emph{MindGenius Education}. 
 
   \subsection{Información general}
-    \begin{description}
+    \begin{itemize}
         \item\textbf{Desarrollado por:} \emph{MindGenius Ltd.}
 	\item\textbf{Sistema operativo:} \emph{Microsoft Windows}.
 	\item\textbf{Lenguaje de implementación:} .
-        \item\textbf{Software colaborativo:} Si. 
+        \item\textbf{Software colaborativo:} \textbf{Si}. 
         \item\textbf{Sistema de seguimiento de incidentes:} No. 
-	\item\textbf{Planificación:} Si.
+	\item\textbf{Planificación:} \textbf{Si}.
 	\item\textbf{Gestión de la cartera de proyectos:} No.
-	\item\textbf{Gestión de recursos:} Si.
+	\item\textbf{Gestión de recursos:} \textbf{Si}.
 	\item\textbf{Gestión de documentos:} No.
 	\item\textbf{Basado en web:} No.
 	\item\textbf{Licencia:} \emph{Comercial}.
 	\item\textbf{URL:} \url{http://www.mindgenius.com/}.
-	\end{description}
+	\end{itemize}
 	\subsection{Características}
 
         MindGenius permite planificar y gestionar proyectos, brainstorming,
@@ -514,10 +521,88 @@ utilizado por varias universidades y escuelas superiores en el \emph{Reino
         También permite exportar los mapas mentales obtenidos a diferentes
         tipos de formatos de \emph{Microsoft Office} así como a \emph{PDF}. 
 
-        Por último, permite obtener el diagrama de \emph{Gantt} que se
+        Por último, permite obtener el \emph{diagrama de Gantt} que se
         corresponde con la información representada en el mapa mental.
 
 	\subsection{Cómo lleva a cabo la gestión de recursos}
+
+        Al iniciar \emph{MindGenius} se muestra una pantalla en blanco con
+        una pequeña ventana emergente donde se pide introducir la idea
+        central sobre la que girará el mapa mental. Será sobre esta idea
+        sobre la que se creen los hijos que formarán el diagrama, para ello
+        se hará uso del menú que se muestra en la figura \ref{IMGMIND1}
+
+        \imagen{mindgenius-menu.png}{12}{Vista del menú de opciones del
+          concepto}{IMGMIND1}
+
+        Con este menú podemos crear hijos de un concepto, o conceptos
+        hermanos, o conceptos padre que pueden haberse olvidado de incluir.
+
+        La aplicación muestra una barra de menú que puede observarse en la
+        anterior imagen, \ref{IMGMIND1}. 
+        
+        \begin{itemize}
+          \item \textbf{Home.} Muestra las opciones para construir el
+            diagrama, añadir conceptos y relaciones entre ellos. Lo que da
+            lugar a la construcción de un diagrama que puede, por ejemplo,
+            como el que muestra la imagen \ref{IMGMIND2}.
+
+            \imagen{mindgenius-representacion.png}{12}{Ejemplo de mapa mental}{IMGMIND2}
+
+          \item \textbf{Insert.} Esta opción de la barra de menús nos permite
+            adjuntar archivos, imágenes, textos, etc. a los diferentes
+            conceptos que componen el diagrama. 
+
+          \item \textbf{Format.} Esta opción ofrece la posibilidad de cambiar
+            el formato y el estilo del diagrama que se está representando,
+            pueden cambiarse los temas, los tipos de conectores, los colores,
+            las formas, la fuente de las letras, etc.
+
+          \item \textbf{Analyze.} Con esta opción se puede realizar la
+            asignación de distintas categorías a los conceptos. Podemos
+            elegir la categoría del \emph{brainstorming} a la que pertenece
+            el concepto, si es que pertenece a alguna; podemos definir el
+            grado de impacto que tendrá el concepto sobre todo lo
+            representado en el mapa o el nivel de dificultad que este
+            representa; por último podemos definir el estado de la revisión
+            (si está correcto, si necesita ser revisado, si está incorrecto o
+            si no está supervisado). Todas estas opciones se muestran en la
+            imagen \ref{IMGMIND3}
+
+            \imagen{mindgenius-categorias.png}{12}{Vista de las diferentes
+              opciones y categorías que pueden asignarse a un concepto}{IMGMIND3}
+
+          \item \textbf{Task.} Es con esta opción con la que se asignan los
+            recursos a los diferentes conceptos del mapa mental, para ello se
+            selecciona el concepto al que se quiere asignar un determinado
+            recurso, y posteriormente se selecciona el recurso que se le
+            asignará de la barra superior donde se muestran los recursos
+            disponibles. En la imagen \ref{IMGMIND4} se muestra todo lo
+            descrito.
+
+            \imagen{mindgenius-recursos.png}{12}{Vista de la opción del menú
+              que asigna los recursos}{IMGMIND4}
+
+            Pero además de asignar recursos, también se pueden
+            planificar las fechas de inicio y fin, el coste del recurso, la
+            prioridad, el tanto por ciento que está completado o el
+            estado. Todo ello sirve para poder generar el \emph{Diagrama de
+              Gantt}, que para este ejemplo se muestra en la imagen
+            \ref{IMGMIND5}.
+
+            \imagen{mindgenius-gantt.png}{12}{Vista del \emph{Diagrama de
+                Gantt} correspondiente al ejemplo creado}{IMGMIND5}
+
+          \item \textbf{Export.} Muestra todos los formatos a los que puede
+            exportarse el mapa mental obtenido. Entre otros formatos se
+            encuentran: \emph{PDF}, \emph{HTML}, \emph{Word} y
+            \emph{PowerPoint}.
+
+          \item \textbf{Tools.} Ofrece una serie de herramientas, como
+            corrector ortográfico, ejemplos de mapas, acceso a la página web,
+            etc.
+
+        \end{itemize}
 
 \chapter{Gestión de documentos}
 \section{En qué consiste}
@@ -560,20 +645,20 @@ Ha sido desarrollada por la empresa americana especializada en desarrollo web
 \emph{Quatre Group LLC.} y se encuentra disponible en 16 idiomas diferentes.
 
   \subsection{Información general}
-    \begin{description}
+    \begin{itemize}
         \item\textbf{Desarrollado por:} \emph{Quatre Group LLC.}
 	\item\textbf{Sistema operativo:} Multiplataforma. 
 	\item\textbf{Lenguaje de implementación:} \emph{AJAX} y \emph{Adobe Flash}.
-        \item\textbf{Software colaborativo:} Si. 
+        \item\textbf{Software colaborativo:} \textbf{Si}. 
         \item\textbf{Sistema de seguimiento de incidentes:} No. 
-	\item\textbf{Planificación:} Si.
+	\item\textbf{Planificación:} \textbf{Si}.
 	\item\textbf{Gestión de la cartera de proyectos:} No.
 	\item\textbf{Gestión de recursos:} No.
-	\item\textbf{Gestión de documentos:} Si.
-        \item\textbf{Basado en web:} Si.
+	\item\textbf{Gestión de documentos:} \textbf{Si}.
+        \item\textbf{Basado en web:} \textbf{Si}.
 	\item\textbf{Licencia:} \emph{SaaS}.
 	\item\textbf{URL:} \url{www.5pmweb.com}
-	\end{description}
+        \end{itemize}
 
 	\subsection{Características}
         
@@ -598,22 +683,36 @@ Ha sido desarrollada por la empresa americana especializada en desarrollo web
 
 \chapter{Caso de estudio. \emph{Redmine}}
 \imagen{redmine-logo.png}{8}{}{}
+
+\emph{Redmine} es una herramienta web usada para la gestión de proyectos y el
+seguimiento de errores. Es software libre, esta implementada haciendo uso
+del framework \emph{Ruby on Rails}, es multiplataforma y soporta un amplio
+abanico de idiomas. La primera versión data del año 2006 y actualmente se
+encuentra la versión 1.1.2. Ha sido desarrollado por un grupo de personas
+encabezado por el francés Jean-Philippe Lang. Se considera que está
+fuertemente influenciado por la herramienta \emph{Trac}, que ha sido
+explicada anteriormente, cuyas características son similares.
+
 \section{Información general}
 	\begin{itemize}
 		\item \textbf{Desarrolado por:} \emph{Jean-Philippe Lang y otros}
 		\item \textbf{Sistema operativo:} Multiplataforma.
 		\item \textbf{Lenguaje de implementación:} \emph{Ruby on Rails}.
-    \item \textbf{Software colaborativo:} Si.
-    \item \textbf{Sistema de seguimiento de incidentes:} Si.
-		\item \textbf{Planificación:} Si.
-		\item \textbf{Gestión de la cartera de proyectos:} Si.
+    \item \textbf{Software colaborativo:} \textbf{Si}.
+    \item \textbf{Sistema de seguimiento de incidentes:} \textbf{Si}.
+		\item \textbf{Planificación:} \textbf{Si}.
+		\item \textbf{Gestión de la cartera de proyectos:} \textbf{Si}.
 		\item \textbf{Gestión de recursos:} No.
-		\item \textbf{Gestión de documentos:} Si.
-		\item \textbf{Basado en web:} Si.
+		\item \textbf{Gestión de documentos:} \textbf{Si}.
+		\item \textbf{Basado en web:} \textbf{Si}.
 		\item \textbf{Licencia:} \emph{GPL}v2.
 		\item \textbf{URL:} \url{http://www.redmine.org}
 	\end{itemize}
 \section{Características}
+
+Esta herramienta tiene características muy interesantes como son:
+
+
 \section{Funcionamiento}
 	\subsection{Sistema de seguimiento de incidentes}
 	\subsection{Planificación}

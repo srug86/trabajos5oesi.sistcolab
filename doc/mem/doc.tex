@@ -78,7 +78,7 @@ particular de la aplicación \emph{Redmine}.
 
 \chapter{Sistema de seguimiento de incidentes}
 \section{En qué consiste}
-Es un paquete software que mantiene y adminstra una lista de incidentes que
+Es un paquete software que mantiene y administra una lista de incidentes que
 han sido reportados. También mantiene una base de datos con información sobre
 problemas comunes y su solución.
 
@@ -120,7 +120,7 @@ desarrolladora es \emph{Edgewall Software}, de origen sueco. \cite{TRA}
         Permite hiperlinks de información entre la base de
         datos de errores, el sistema de control de versiones y el contenido
         de la wiki. También sirve como interfaz para los sistemas de control
-        de versiones e incluye otras caracteristicas como:
+        de versiones e incluye otras características como:
         \begin{itemize}
             \item Gestión de proyectos: desarrollo del plan de trabajo,
             creación de hitos.
@@ -129,10 +129,10 @@ desarrolladora es \emph{Edgewall Software}, de origen sueco. \cite{TRA}
             \item Línea del tiempo que muestra toda la actividad reciente.
             \item Informes personalizados.
             \item RSS.
-            \item Soporte para multiples proyectos al mismo tiempo.
+            \item Soporte para múltiples proyectos al mismo tiempo.
             \item Extensión por medio de \emph{plugins}.
             \item Exportación a iCalendar.
-            \item Uso de multiples repositorios.
+            \item Uso de múltiples repositorios.
         \end{itemize}
         
         Son muchas las empresas que utilizan esta herramienta, algunas de las
@@ -140,6 +140,68 @@ desarrolladora es \emph{Edgewall Software}, de origen sueco. \cite{TRA}
         \emph{Dojo Toolkit}, \emph{Pidgin} y un largo etcétera. 
 
 	\subsection{Cómo lleva a cabo el seguimiento de incidentes}
+
+        La aplicación tiene un menú en la parte superior izquierda que
+        presenta las siguientes opciones:
+        \begin{description}
+          \item \textbf{Wiki.} Es la vista que nos aparece al abrir
+            la aplicación y nos muestra la información que contiene la
+            \emph{wiki}. En la imagen \ref{IMGTRAC1} podemos ver el aspecto
+            que muestra la aplicación nada más iniciarse.
+
+            \imagen{trac-wiki.png}{12}{\emph{Wiki} de la versión demo de
+              \emph{Trac 0.12}}{IMGTRAC1}
+
+          \item \textbf{Eventos.} La pestaña de eventos nos muestra toda la
+            actividad que está teniendo o ha tenido lugar en los
+            proyectos. Existe un menú donde puede decidirse que información
+            mostrar y cual ocultar, según los gusto o necesidades del
+            usuario, así como las fechas sobre las cuales se desea que se
+            muestren dichos eventos. En la imagen \ref{IMGTRAC2} se muestra la
+            vista de esta pestaña.
+
+            \imagen{Trac-Eventos.png}{12}{Vista de la pestaña de
+              eventos}{IMGTRAC2}
+
+          \item \textbf{Progreso.} En esta pestaña se muestra el progreso que
+            han sufrido las incidencias reportadas, como podemos ver en la
+            imagen \ref{IMGTRAC3}. 
+
+            \imagen{Trac-Progreso2.png}{12}{Vista de la pestaña de progreso}{IMGTRAC3}
+            
+          \item \textbf{Hojear Fuentes.} Esta pestaña permite acceder a las
+            fuentes contenidas en el repositorio.
+
+            \imagen{Trac-Fuentes.png}{12}{Vista de la pestaña de fuentes}{}
+
+          \item \textbf{Ver incidencias.} Dentro de esta pestaña se muestran
+            todas las incidencias reportadas al sistema, pero antes de
+            acceder a la lista de incidencias se tiene un menú donde se
+            indicará si quieren verse todas las incidencia o si por el
+            contrario sólo se quieren las incidencias que cumplan unas
+            ciertas características.
+            En la imagen \ref{IMGTRAC4} se muestra la lista obtenida al
+            seleccionar que se muestren todas las incidencias del sistema.
+
+            \imagen{Trac-Incidencias2.png}{12}{Lista de
+              incidencias}{IMGTRAC4}
+
+            Pinchando sobre la incidencia de la lista sobre la que deseemos
+            trabajar accedemos a otra vista donde se nos da la opción de
+            modificar la información referente a la incidencia. Podemos
+            adjuntar archivos, indicar que se ha finalizado la incidencia,
+            reasignarla a otra persona o añadir comentarios. En la imagen
+            \ref{IMGTRAC5} se muestran las acciones que pueden realizarse.
+
+            \imagen{Trac-ModificarIncidencia.png}{12}{Vista de la
+              modificación de una incidencia}{IMGTRAC6}
+
+          \item \textbf{Nueva incidencia.} Accediendo a esta pestaña podemos
+            crear una nueva incidencia, la cual quedará reflejada en el
+            sistema.
+
+          \item \textbf{Buscar}.
+        \end{description}
 
 \chapter{Planificación}
 \section{En qué consiste}
@@ -399,7 +461,7 @@ versión 3 de la licencia \emph{AGPL} (\emph{Affero General Public License}).
 La gestión de recursos es la implementación de un plan que permita utilizar
 los recursos disponibles de una forma eficiente y eficaz. La gestión de
 recursos es un elemento clave a la hora de realizar un proyecto, puesto que
-una buena gestión permitirá que el desarrollo se realize más rápida y
+una buena gestión permitirá que el desarrollo se realice más rápida y
 eficientemente.
 
 Las herramientas software de gestión de recursos automatizan la asignación de
@@ -459,8 +521,44 @@ utilizado por varias universidades y escuelas superiores en el \emph{Reino
 
 \chapter{Gestión de documentos}
 \section{En qué consiste}
+
+Los sistemas de gestión de documentos son herramientas informáticas que
+permiten el almacenamiento, la búsqueda y el control de las diferentes
+versiones de documentos tanto electrónicos como en papel, aunque en este
+último caso se trabaja con la imagen del documento. 
+
+A parte de las características mencionadas anteriormente, este tipo de
+sistemas puede presentar además las siguientes características:
+\begin{itemize}
+    \item Información adicional: quién lo creo o en que fecha, cuando ha sido
+    modificado, etc. 
+    \item Integración dentro de otras aplicaciones.
+    \item Captura de documentos en papel mediante escanéo.
+    \item Indexación de los documentos para facilitar el acceso.
+    \item Seguridad, permite la asignación de permisos para el acceso a los
+      documentos.
+    \item Recuperación de documentos.
+    \item Colaboración en la creación del documentos, bien de manera
+      concurrente o mediante acceso por turnos.
+    \item Permite la publicación o distribución de los documentos, por lo que
+      ofrece el apoyo necesario para realizar estar tareas.
+\end{itemize}
+
+Este tipo de programas hizo su aparición en la década de los 80, trabajando
+en sus primeros tiempos con documentos en papel solamente, y posteriormente
+se irían ampliando sus funcionalidades para dar soporte al trabajo con
+documentos electrónicos.
+
 \section{Ejemplo. \emph{5pm}}
 \imagen{5pm-logo.png}{5}{}{}
+
+Es una aplicación web que trabaja como proveedor de servicio de aplicación o
+\emph{ASP}. Permite la gestión de proyectos y gestiona el trabajo sobre los
+distintos documentos de manera colaborativa.
+
+Ha sido desarrollada por la empresa americana especializada en desarrollo web
+\emph{Quatre Group LLC.} y se encuentra disponible en 16 idiomas diferentes.
+
   \subsection{Información general}
     \begin{description}
         \item\textbf{Desarrollado por:} \emph{Quatre Group LLC.}
@@ -476,7 +574,26 @@ utilizado por varias universidades y escuelas superiores en el \emph{Reino
 	\item\textbf{Licencia:} \emph{SaaS}.
 	\item\textbf{URL:} \url{www.5pmweb.com}
 	\end{description}
+
 	\subsection{Características}
+        
+        \emph{5pm} ha sido desarrollado usando \emph{AJAX} y \emph{Adobe
+          Flash}, lo que permite tener una sola interfaz común que puede ser
+        personalizada en función de los gustos de cada uno de los usuarios.
+
+        Además la aplicación realiza las siguientes funciones:
+        \begin{itemize}
+          \item Gestión de proyectos.
+          \item Control del tiempo empleado en cada proyecto.
+          \item Generación de \emph {Diagramas de Gantt} interactivos.
+          \item Generación de informes que pueden ser exportados a
+            \emph{CVS}.
+          \item Aplicación para móvil.
+          \item Cuenta con una \emph{API} abierta.
+          \item Permite el envío de avisos mediante correo electrónico.
+          \item Se encuentra integrado con \emph{Google Apps}.
+        \end{itemize}
+        
 	\subsection{Cómo lleva a cabo la gestión de documentos}
 
 \chapter{Caso de estudio. \emph{Redmine}}

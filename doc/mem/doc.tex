@@ -754,9 +754,9 @@ seguimiento de errores. Es software libre, esta implementada haciendo uso
 del framework \emph{Ruby on Rails}, es multiplataforma y soporta un amplio
 abanico de idiomas. La primera versión data del año 2006 y actualmente se
 encuentra la versión 1.1.2. Ha sido desarrollado por un grupo de personas
-encabezado por el francés Jean-Philippe Lang. Se considera que está
-fuertemente influenciado por la herramienta \emph{Trac}, que ha sido
-explicada anteriormente, cuyas características son similares.
+encabezadas por el francés Jean-Philippe Lang. Se considera que está
+fuertemente influenciado por la herramienta \emph{Trac} (explicada
+anteriormente).
 
 \section{Información general}
 	\begin{itemize}
@@ -804,10 +804,10 @@ Antes de poder hacer cualquier operación, el usuario deberá registrarse y
 autentificarse en la aplicación.
 
 Una vez autentificado, el navegador mostrará una pantalla similar a la de la
-figura \ref{IMGRED2}.
+figura \ref{IMGRED21}.
 
 \imagen{redmine-inicio.png}{12}{Vista de la pantalla principal de la
-aplicación}{IMGRED2}
+aplicación}{IMGRED21}
 
 La pantalla principal mostrará una lista con los proyectos que han sufrido
 algún cambio recientemente, así como una pequeña descripción de estos. Además,
@@ -817,7 +817,7 @@ de proyectos (con los proyectos disponibles para el usuario).
 La barra de menús ofrece las siguientes opciones:
 \begin{itemize}
 	\item \textbf{Inicio}: sirve para acceder a la vista principal de la
-aplicación (mostrada en la figura \ref{IMGRED2}).
+aplicación (mostrada en la figura \ref{IMGRED21}).
 	\item \textbf{Mi página}: sirve para acceder a una vista cuyo contenido ha
 sido previamente configurado por el usuario. Por defecto, aparecerá una lista
 con las peticiones que le están asignadas al usuario y otra con las peticiones
@@ -827,7 +827,7 @@ subproyectos en los que está registrado el usuario. A través de esta página,
 el usuario podrá: acceder a la información referida a cada uno de estos
 proyectos y subproyectos, crear nuevos proyectos, ver todas las peticiones
 asociadas a cada proyecto, ver los tiempos dedicados al desarrollo de cada
-proyecto y ver un resumen con las actividad global registrada por
+proyecto y ver un resumen con la actividad global registrada por
 \emph{Redmine}.
 	\item \textbf{Ayuda}: sirve para acceder a la guía de ayuda online de
 \emph{Redmine} (\url{http://www.redmine.org/guide}).
@@ -853,26 +853,29 @@ la gestión de proyectos.
         El seguimiento de incidentes se realiza mediante la creación de
         peticiones que serán asignadas a los usuarios para su resolución. Las
         peticiones pueden ser de tres tipos: error, tarea y soporte. En la
-        figura \ref{IMGRED1} se muestra un ejemplo de creación de petición de
+        figura \ref{IMGRED31} se muestra un ejemplo de creación de petición de
         error.
 
-        \imagen{redmine-crearpeticion.png}{12}{Vista de la ventana Crear
-          Petición}{IMGRED1}
+        \imagen{redmine-crearpeticion.png}{12}{Vista de la pestaña de 
+				\emph{Nueva petición}}{IMGRED31}
 
         Dentro de un proyecto pueden existir diversos tipos de peticiones,
         que tendrán diferentes fechas de realización, diferentes prioridades
-        y que estarán a personas diferentes. 
+        y que estarán asignados a diferentes usuarios. 
 
-        Para ver todas las peticiones referentes a un proyecto debe
-        seleccionarse la opción \emph{Actividad}, donde se muestra un listado
-        de todas las peticiones y su estado (nueva, en progreso, finalizada,
-        cerrada, rechazada, realimentación).
+        Para ver todas las peticiones referentes a un proyecto se deberá
+        seleccionar la opción \emph{Actividad}, donde se muestra un listado
+        de todas las peticiones y su estado (\emph{Nueva}, \emph{En progreso},
+				\emph{Finalizada}, \emph{Cerrada}, \emph{Rechazada} o
+				\emph{realimentación)}. La pestaña de \emph{Actividad} muestra un
+				aspecto similar al de la figura \ref{IMGRED41}.
 
         \imagen{redmine-actividad.png}{12}{Vista del listado de peticiones de
-        un proyecto}{IMGRED2}
+        un proyecto}{IMGRED41}
 
-        Cuando una petición está terminada se puede cambiar su estado a
-        cerrada para que no se muestre en la lista de peticiones pendientes.
+        Cuando una petición se considera terminada, podemos cambiar su estado
+        a \emph{Cerrada}, de este modo dicha petición dejará de aparecer en la
+				lista de peticiones	pendientes.
 
 	\subsection{Planificación}
 	La introducción de tareas asociadas a un proyecto, su realización, la
@@ -885,9 +888,9 @@ la gestión de proyectos.
 	que comienzan y/o que terminan en un día determinado.
 
 	\imagen{redmine-calendario.png}{12}{Calendario de tareas de un proyecto}
-	{IMGRED3}
+	{IMGRED51}
 
-	Como puede verse en la figura \ref{IMGRED3}, el calendario dispone de unos
+	Como puede verse en la figura \ref{IMGRED51}, el calendario dispone de unos
 	filtros que permiten mostrar únicamente	las tareas que cumplan una serie de
 	condiciones.
 	
@@ -896,11 +899,11 @@ la gestión de proyectos.
 	que muestra el tiempo de dedicación previsto para diferentes tareas o
 	actividades a lo largo de un tiempo total determinado. Para realizar
 	un \emph{diagramas de Gantt} como el que se muestra en la figura
-	\ref{IMGRED4}, \emph{Redmine} utiliza los tiempos estimados por los
+	\ref{IMGRED51}, \emph{Redmine} utiliza los tiempos estimados por los
 	creadores de las tareas de un proyecto y los tiempos	empleados para su
 	resolución.
 
-	\imagen{redmine-gantt.png}{12}{Diagrama de Gantt de un proyecto}{IMGRED4}
+	\imagen{redmine-gantt.png}{12}{Diagrama de Gantt de un proyecto}{IMGRED51}
 
 	En este diagrama puede observarse de forma resumida el estado de las tareas
 	del proyecto que cumplen con las condiciones del filtrado seleccionado.
@@ -910,10 +913,10 @@ la gestión de proyectos.
 	con el estado de todas las tareas que se han creado desde que comenzó el
 	proyecto. Este recurso está disponible en la pestaña \emph{Peticiones}.
 	La lista ofrecida tendrá un aspecto similar al que puede verse en la
-	figura \ref{IMGRED5}. 
+	figura \ref{IMGRED61}. 
 
 	\imagen{redmine-peticiones.png}{12}{Vista de las peticiones de un
-	proyecto}{IMGRED5}
+	proyecto}{IMGRED61}
 
 	Como puede verse, cada tarea está definida por los siguientes campos:
 	\begin{itemize}
@@ -929,10 +932,11 @@ la gestión de proyectos.
 	\item \textbf{Estado}: Estado de realización de la tarea. Los estados en
 	los que puede encontrarse una tarea son: \emph{New}, \emph{In Progress},
 	\emph{Resolved}, \emph{Feedback}, \emph{Rejected} o \emph{Closed} (nueva,
-	en progreso, resuelta, en discusion, rechazada o cerrada; respectivamente).
+	en progreso, finalizada, retroalimentación, rechazada o cerrada;
+	respectivamente).
 	\item \textbf{Prioridad}: Prioridad de realización de la tarea. Una tarea
 	puede tener una prioridad: \emph{Low}, \emph{Normal}, \emph{High},
-	\emph{Urgent} o \emph{inmediate} (baja, normal, alta, urgente o inmediata;
+	\emph{Urgent} o \emph{Inmediate} (baja, normal, alta, urgente o inmediata;
 	respectivamente).
 	\item \textbf{Tema}: Breve descripción del asunto de la tarea.
 	\item \textbf{Asignado a}: Usuario al que se le ha asignado la realización
@@ -949,33 +953,28 @@ la gestión de proyectos.
 	Para obtener más información acerca de una tarea, simplemente bastará con
 	seleccionar su número de identificación o su descripción existente en el
 	campo \emph{Tema}. La vista obtenida será similar a la ofrecida por la
-	figura \ref{IMGRED6}.
+	figura \ref{IMGRED71}.
 
-	\imagen{redmine-vistatarea.png}{12}{Vista general de una tarea}{IMGRED6}
-
-	En cambio, si se desea acceder a la información de un proyecto concreto de
-	la lista, habrá que seleccionar el nombre del proyecto, contenido en el
-	campo \emph{Proyecto}. Se obtendrá una vista como la mostrada en la figura
-	\ref{IMGRED7}.
-
-	\imagen{redmine-vistaproyecto.png}{12}{Vista general de un proyecto}{IMGRED7}
+	\imagen{redmine-vistatarea.png}{12}{Vista general de una tarea}{IMGRED71}
 
 	\subsection{Gestión de documentos}
 
         \emph{Redmine} permite gestionar y almacenar documentos. Para añadir
-        un nuevo documento tenemos que ir a la pestaña \emph{Documentos} y
-        seleccionar la opción \emph{Añadir Documento}. En la figura
-        \ref{IMGRED8} se muestra la vista de la creación del documento.
+        un nuevo documento tendremos que dirigirnos a la pestaña
+				\emph{Documentos} y allí seleccionar la opción \emph{Añadir Documento}.
+				En la figura \ref{IMGRED81} se muestra la vista de la creación del
+				documento.
 
         \imagen{redmine-creardocumento.png}{12}{Vista de la creación de un
-          nuevo documento}{IMGRED8}
+          nuevo documento}{IMGRED81}
 
-        Una vez creado el documento, para acceder a el simplemente se
-        necesita seleccionarlo en la lista de documentos añadidos, que se
-        muestra en la figura \ref{IMGRED9}.
+        Una vez creado el documento, se mostrará una lista con los documentos
+				existentes (figura \ref{IMGRED91}). Para acceder a la información de 
+				alguno de esos documentos, bastará con hacer click sobre el enlace
+				que contiene la etiqueta con su nombre.
 
         \imagen{redmine-documentos.png}{12}{Vista del listado de documentos
-          añadidos}{IMGRED9}
+          del proyecto}{IMGRED91}
 
 \begin{thebibliography}{99}
 \bibitem{GPR} Definición de \emph{Gestión de proyectos}:

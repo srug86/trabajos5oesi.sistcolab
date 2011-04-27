@@ -261,7 +261,7 @@ desarrollada por la empresa australiana \emph{Atlassian}. \cite{WJI}
 	caritativas y personas individuales.
 
 	\subsection{Cómo lleva a cabo la planificación}
-	En la imagen \ref{IMGJIRA1} puede observarse la vista general que ofrece de
+	En la figura \ref{IMGJIRA1} puede observarse la vista general que ofrece de
 	un proyecto dicha la aplicación.
 
 	\imagen{jira-general.png}{12}{Vista general del proyecto}{IMGJIRA1}
@@ -881,7 +881,59 @@ la gestión de proyectos.
 	del proyecto que cumplen con las condiciones del filtrado seleccionado.
 
 	\subsection{Gestión de la cartera de proyectos}
+	Para la gestión de la cartera de proyectos, \emph{Redmine} ofrece un listado
+	con el estado de todas las tareas que se han creado desde que comenzó el
+	proyecto. Este recurso está disponible en la pestaña \emph{Peticiones}.
+	La lista ofrecida tendrá un aspecto similar al que puede verse en la
+	figura \ref{IMGRED5}. 
 
+	\imagen{redmine-peticiones.png}{12}{Vista de las peticiones de un
+	proyecto}{IMGRED5}
+
+	Como puede verse, cada tarea está definida por los siguientes campos:
+	\begin{itemize}
+	\item \textbf{\#}: Identificador numérico de la tarea. Es el identificador
+	único de cada tarea. La primera tarea generada llevará el número 1, la
+	segunda el 2 y así sucesivamente. Además, estas tareas pueden tener a su
+	vez subtareas. Las subtareas tendrán en su definición el identificador de la
+	tarea	padre de la que descienden.
+	\item \textbf{Proyecto}: Nombre del proyecto al que pertenece la tarea.
+	\item \textbf{Tipo}: Tipo de tarea. Puede ser el reporte de un error
+	(\emph{bug}),	la implementación de una funcionalidad (\emph{feature}) o una
+	tarea de soporte (\emph{support}).
+	\item \textbf{Estado}: Estado de realización de la tarea. Los estados en
+	los que puede encontrarse una tarea son: \emph{New}, \emph{In Progress},
+	\emph{Resolved}, \emph{Feedback}, \emph{Rejected} o \emph{Closed} (nueva,
+	en progreso, resuelta, en discusion, rechazada o cerrada; respectivamente).
+	\item \textbf{Prioridad}: Prioridad de realización de la tarea. Una tarea
+	puede tener una prioridad: \emph{Low}, \emph{Normal}, \emph{High},
+	\emph{Urgent} o \emph{inmediate} (baja, normal, alta, urgente o inmediata;
+	respectivamente).
+	\item \textbf{Tema}: Breve descripción del asunto de la tarea.
+	\item \textbf{Asignado a}: Usuario al que se le ha asignado la realización
+	de esta tarea. Este usuario a su vez puede delegar funciones en otros
+	usuarios.
+	\item \textbf{Actualizado}: Fecha de la última modificación realizada en la
+	tarea.
+	\end{itemize}
+
+	Al igual que ocurre con otros listados de la aplicación, se pueden utilizar
+	filtros más o menos avanzados para mostrar unos u otros resultados. Y los
+	resultados son exportables en \emph{pdf} y \emph{csv}.
+
+	Para obtener más información acerca de una tarea, simplemente bastará con
+	seleccionar su número de identificación o su descripción existente en el
+	campo \emph{Tema}. La vista obtenida será similar a la ofrecida por la
+	figura \ref{IMGRED6}.
+
+	\imagen{redmine-vistatarea.png}{12}{Vista general de una tarea}{IMGRED6}
+
+	En cambio, si se desea acceder a la información de un proyecto concreto de
+	la lista, habrá que seleccionar el nombre del proyecto, contenido en el
+	campo \emph{Proyecto}. Se obtendrá una vista como la mostrada en la figura
+	\ref{IMGRED7}.
+
+	\imagen{redmine-vistaproyecto.png}{12}{Vista general de un proyecto}{IMGRED7}
 
 	\subsection{Gestión de documentos}
 

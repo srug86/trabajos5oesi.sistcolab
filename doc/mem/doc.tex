@@ -714,9 +714,97 @@ Esta herramienta tiene características muy interesantes como son:
 
 
 \section{Funcionamiento}
+La aplicación \emph{Redmine} será instalada en un servidor. Cuando alguien
+quiera acceder a ella, escribirá en un navegador la dirección
+correspondiente a la aplicación \emph{Redmine} dentro de ese servidor. El
+resultado será una pantalla como la mostrada en la figura \ref{IMGRED1}.
+		
+\imagen{redmine-login.png}{12}{Vista de la pantalla de autentificación}
+{IMGRED1}
+
+Antes de poder hacer cualquier operación, el usuario deberá registrarse y
+autentificarse en la aplicación.
+
+Una vez autentificado, el navegador mostrará una pantalla similar a la de la
+figura \ref{IMGRED2}.
+
+\imagen{redmine-inicio.png}{12}{Vista de la pantalla principal de la
+aplicación}{IMGRED2}
+
+La pantalla principal mostrará una lista con los proyectos que han sufrido
+algún cambio recientemente, así como una pequeña descripción de estos. Además,
+en la parte superior aparece una barra de menús, un buscador y un selector
+de proyectos (con los proyectos disponibles para el usuario).
+
+La barra de menús ofrece las siguientes opciones:
+\begin{itemize}
+	\item \textbf{Inicio}: sirve para acceder a la vista principal de la
+aplicación (mostrada en la figura \ref{IMGRED2}).
+	\item \textbf{Mi página}: sirve para acceder a una vista cuyo contenido ha
+sido previamente configurado por el usuario. Por defecto, aparecerá una lista
+con las peticiones que le están asignadas al usuario y otra con las peticiones
+registradas por el usuario.
+	\item \textbf{Proyectos}: sirve para mostrar una lista con los proyectos y
+subproyectos en los que está registrado el usuario. A través de esta página,
+el usuario podrá: acceder a la información referida a cada uno de estos
+proyectos y subproyectos, crear nuevos proyectos, ver todas las peticiones
+asociadas a cada proyecto, ver los tiempos dedicados al desarrollo de cada
+proyecto y ver un resumen con las actividad global registrada por
+\emph{Redmine}.
+	\item \textbf{Ayuda}: sirve para acceder a la guía de ayuda online de
+\emph{Redmine} (\url{http://www.redmine.org/guide}).
+	\item \textbf{Conectado como \emph{nombre\_de\_usuario}}: si se pulsa sobre
+el \emph{nombre\_de\_usuario}, se obtendrá una vista con los datos referidos
+a dicho usuario: correo, datos de registro y última conexión, proyectos en los
+que está inscrito y actividad reciente.
+	\item \textbf{Mi cuenta}: sirve para mostrar una pantalla con la información
+básica de registro del usuario: nombre, apellidos, correo e idioma. Además,
+también aparecen algunas opciones de configuración, como la de recibir
+notificaciones por correo, elegir zona horaria, cambiar la subscripción
+\emph{RSS}, etc. Todos los parámetros mostrados pueden ser editados.
+	\item \textbf{Desconexión}: sirve para finalizar la sesión del usuario en la
+aplicación.
+\end{itemize}
+
+A continuación, se explica como \emph{Redmine} implementa cada una de las
+funcionalidades que lo caracterizan dentro de los sistemas colaborativos para
+la gestión de proyectos.
+
 	\subsection{Sistema de seguimiento de incidentes}
 	\subsection{Planificación}
+	La introducción de tareas asociadas a un proyecto, su realización, la
+	asignación de personal a dichas tareas y otros factores, quedan registrados
+	en el calendario de la aplicación. Estos datos además sirven para generar
+	el diagrama de \emph{Gantt} que sirve para resumir toda la actividad.
+
+	Si en la vista principal de un proyecto se selecciona la pestaña
+	\emph{Calendario}, la aplicación mostrará un calendario con las tareas
+	que comienzan y/o que terminan en un día determinado.
+
+	\imagen{redmine-calendario.png}{12}{Calendario de tareas de un proyecto}
+	{IMGRED3}
+
+	Como puede verse en la figura \ref{IMGRED3}, el calendario dispone de unos
+	filtros que permiten mostrar únicamente	las tareas que cumplan una serie de
+	condiciones.
+	
+	Otra de las herramientas de planificación implementadas por \emph{Redmine}
+	es el \emph{diagrama de Gantt}. Un \emph{diagrama de Gantt} es un diagrama
+	que muestra el tiempo de dedicación previsto para diferentes tareas o
+	actividades a lo largo de un tiempo total determinado. Para realizar
+	un \emph{diagramas de Gantt} como el que se muestra en la figura
+	\ref{IMGRED4}, \emph{Redmine} utiliza los tiempos estimados por los
+	creadores de las tareas de un proyecto y los tiempos	empleados para su
+	resolución.
+
+	\imagen{redmine-gantt.png}{12}{Diagrama de Gantt de un proyecto}{IMGRED4}
+
+	En este diagrama puede observarse de forma resumida el estado de las tareas
+	del proyecto que cumplen con las condiciones del filtrado seleccionado.
+
 	\subsection{Gestión de la cartera de proyectos}
+
+
 	\subsection{Gestión de documentos}
 
 \begin{thebibliography}{99}
@@ -727,7 +815,7 @@ Esta herramienta tiene características muy interesantes como son:
 \bibitem{WTR} Descripción de Trac:
   \url{http://es.wikipedia.org/wiki/Trac}
 \bibitem{TRA} Página web de Trac:
-  \url{http://trac.edgewall.org/}
+  \url{http://trac.edgewall.org}
 \bibitem{WJI} Descripción de Jira:
   \url{http://es.wikipedia.org/wiki/JIRA}
 \bibitem{JIR} Página web de Jira:

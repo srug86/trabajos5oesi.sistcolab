@@ -90,7 +90,7 @@ Este tipo de sistemas basan su funcionamiento en la existencia de unos
 archivos llamados \emph{tickets}, estos archivos se encuentran dentro del
 sistema y contienen información relativa a trabajos realizados sobre el
 software. Para su rápida localización tienen un número único por el cual se
-hace referencia a el.
+hace referencia a el \cite{ITS}.
 
 \section{Ejemplo. \emph{Trac}}
 \imagen{trac-logo.png}{5}{}{}
@@ -473,7 +473,7 @@ eficientemente.
 
 Las herramientas software de gestión de recursos automatizan la asignación de
 recursos y ayudan a generar la cartera de recursos, donde se muestran los
-recursos disponibles y la demanda que se hace de ellos.
+recursos disponibles y la demanda que se hace de ellos \cite{WRS}.
 
 \section{Ejemplo. \emph{MindGenius}}
 \imagen{mindgenius-logo.png}{5}{}{}
@@ -632,7 +632,7 @@ sistemas puede presentar además las siguientes características:
 Este tipo de programas hizo su aparición en la década de los 80, trabajando
 en sus primeros tiempos con documentos en papel solamente, y posteriormente
 se irían ampliando sus funcionalidades para dar soporte al trabajo con
-documentos electrónicos.
+documentos electrónicos \cite{DMS}.
 
 \section{Ejemplo. \emph{5pm}}
 \imagen{5pm-logo.png}{5}{}{}
@@ -849,11 +849,36 @@ funcionalidades que lo caracterizan dentro de los sistemas colaborativos para
 la gestión de proyectos.
 
 	\subsection{Sistema de seguimiento de incidentes}
+        
+        El seguimiento de incidentes se realiza mediante la creación de
+        peticiones que serán asignadas a los usuarios para su resolución. Las
+        peticiones pueden ser de tres tipos: error, tarea y soporte. En la
+        figura \ref{IMGRED1} se muestra un ejemplo de creación de petición de
+        error.
+
+        \imagen{redmine-crearpeticion.png}{12}{Vista de la ventana Crear
+          Petición}{IMGRED1}
+
+        Dentro de un proyecto pueden existir diversos tipos de peticiones,
+        que tendrán diferentes fechas de realización, diferentes prioridades
+        y que estarán a personas diferentes. 
+
+        Para ver todas las peticiones referentes a un proyecto debe
+        seleccionarse la opción \emph{Actividad}, donde se muestra un listado
+        de todas las peticiones y su estado (nueva, en progreso, finalizada,
+        cerrada, rechazada, realimentación).
+
+        \imagen{redmine-actividad.png}{12}{Vista del listado de peticiones de
+        un proyecto}{IMGRED2}
+
+        Cuando una petición está terminada se puede cambiar su estado a
+        cerrada para que no se muestre en la lista de peticiones pendientes.
+
 	\subsection{Planificación}
 	La introducción de tareas asociadas a un proyecto, su realización, la
 	asignación de personal a dichas tareas y otros factores, quedan registrados
 	en el calendario de la aplicación. Estos datos además sirven para generar
-	el diagrama de \emph{Gantt} que sirve para resumir toda la actividad.
+	el \emph{diagrama de Gantt} que sirve para resumir toda la actividad.
 
 	Si en la vista principal de un proyecto se selecciona la pestaña
 	\emph{Calendario}, la aplicación mostrará un calendario con las tareas
@@ -937,11 +962,32 @@ la gestión de proyectos.
 
 	\subsection{Gestión de documentos}
 
+        \emph{Redmine} permite gestionar y almacenar documentos. Para añadir
+        un nuevo documento tenemos que ir a la pestaña \emph{Documentos} y
+        seleccionar la opción \emph{Añadir Documento}. En la figura
+        \ref{IMGRED8} se muestra la vista de la creación del documento.
+
+        \imagen{redmine-creardocumento.png}{12}{Vista de la creación de un
+          nuevo documento}{IMGRED8}
+
+        Una vez creado el documento, para acceder a el simplemente se
+        necesita seleccionarlo en la lista de documentos añadidos, que se
+        muestra en la figura \ref{IMGRED9}.
+
+        \imagen{redmine-documentos.png}{12}{Vista del listado de documentos
+          añadidos}{IMGRED9}
+
 \begin{thebibliography}{99}
 \bibitem{GPR} Definición de \emph{Gestión de proyectos}:
 \\ \url{http://es.wikipedia.org/wiki/Gestion_de_proyectos}
 \bibitem{WPM} Comparación del software disponible para la gestión de proyectos:
 \\ \url{http://en.wikipedia.org/wiki/List_of_project_management_software}
+\bibitem{ITS} Definición de \emph{Sistema de seguimiento de incidentes}:
+\\ \url{http://es.wikipedia.org/wiki/Sistema_de_seguimiento_de_incidentes}
+\bibitem{WRS} Definición de \emph{Gestión de recursos}:
+\\ \url{http://en.wikipedia.org/wiki/Resource_Management}
+\bibitem{DMS} Definición de \emph{Software de gestión de documentos}:
+\\ \url{http://es.wikipedia.org/wiki/Software_de_gestión_documental}
 \bibitem{WTR} Descripción de Trac:
   \url{http://es.wikipedia.org/wiki/Trac}
 \bibitem{TRA} Página web de Trac:
